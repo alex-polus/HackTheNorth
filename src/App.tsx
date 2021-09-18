@@ -1,7 +1,6 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-function App() {
-  return <div>hi</div>;
+export default function App() {
+  return <>please work</>;
 }
-
-export default App;
