@@ -2,6 +2,7 @@ import { Box, Grid, Paper } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import React from "react";
 import Background from "../Components/Background";
+import BoxCard from "../Components/BoxCard";
 import SearchBar from "../Components/SearchBar";
 
 let height = {
@@ -44,7 +45,9 @@ function Home() {
             justifyContent="center"
             alignItems="center"
           >
-            <Box>Hello</Box>
+            <BoxCard />
+            <BoxCard />
+            <BoxCard />
           </Grid>
         </Grid>
       </Grid>
