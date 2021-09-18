@@ -4,8 +4,10 @@ import React from "react";
 function BoxCard() {
   return (
     <>
-      <Box></Box>
-      <h1>title</h1>
+      <Box>
+        <img src="../img/firstpic.png" alt="Logo" />
+        <h1>title</h1>
+      </Box>
     </>
   );
 }
