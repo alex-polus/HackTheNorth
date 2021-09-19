@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import Navbar from "../Components/Navbar";
 import { Box, Grid, Paper } from "@mui/material";
 import BoxCard from "../Components/BoxCard";
@@ -6,6 +7,10 @@ import BoxCard from "../Components/BoxCard";
 let height = {
   height: 550,
 };
+let link = {
+  textDecoration: 0,
+};
+
 
 const house =
   "https://raw.githubusercontent.com/alex-polus/HackTheNorth/client-web/src/img/house.png";
@@ -36,20 +41,30 @@ function Page3() {
             alignItems="baseline"
             spacing={0}
           >
-            <BoxCard
-              imgName={condo}
-              imgWidth={201}
-              imgHeight={123}
-              titleCard={"Condomium"}
-              titleDesc={""}
-            />
-            <BoxCard
-              imgName={house}
-              imgWidth={142}
-              imgHeight={110}
-              titleCard={"House"}
-              titleDesc={""}
-            />
+            <Link
+              to="/house"
+              style={link}
+            >
+              <BoxCard
+                imgName={condo}
+                imgWidth={201}
+                imgHeight={123}
+                titleCard={"Condomium"}
+                titleDesc={""}
+              />
+            </Link>
+            <Link
+              to="/house"
+              style={link}
+            >
+              <BoxCard
+                imgName={house}
+                imgWidth={142}
+                imgHeight={110}
+                titleCard={"House"}
+                titleDesc={""}
+              />
+            </Link>
           </Grid>
         </Grid>
       </Grid>

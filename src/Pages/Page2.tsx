@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import { Box, Grid, Paper } from "@mui/material";
 import BoxCard from "../Components/BoxCard";
@@ -6,6 +7,11 @@ import BoxCard from "../Components/BoxCard";
 let height = {
   height: 550,
 };
+let link = {
+  textDecoration: 0,
+};
+
+
 const pre_built =
   "https://raw.githubusercontent.com/alex-polus/HackTheNorth/client-web/src/img/prebuilt.png";
 const pre_construct =
@@ -35,24 +41,34 @@ function Page2() {
           alignItems="flex-end"
         >
           <Grid item marginTop={5}>
-            <BoxCard
-              marginTop={10}
-              imgName={pre_built}
-              imgWidth={175}
-              imgHeight={89}
-              titleCard={"Pre-Built"}
-              titleDesc={"I want a home that's already been built"}
-            />
+            <Link
+              to="/type-house"
+              style={link}
+            >
+              <BoxCard
+                marginTop={10}
+                imgName={pre_built}
+                imgWidth={175}
+                imgHeight={89}
+                titleCard={"Pre-Built"}
+                titleDesc={"I want a home that's already been built"}
+              />
+            </Link>
           </Grid>
           <Grid item>
-            <BoxCard
-              marginTop={0}
-              imgName={pre_construct}
-              imgWidth={162}
-              imgHeight={101}
-              titleCard={"Pre-Construction"}
-              titleDesc={"I'm looking for a pre-construction"}
-            />
+            <Link
+              to="/type-house"
+              style={link}
+            >
+              <BoxCard
+                marginTop={0}
+                imgName={pre_construct}
+                imgWidth={162}
+                imgHeight={101}
+                titleCard={"Pre-Construction"}
+                titleDesc={"I'm looking for a pre-construction"}
+              />
+            </Link>
           </Grid>
         </Grid>
       </Grid>
