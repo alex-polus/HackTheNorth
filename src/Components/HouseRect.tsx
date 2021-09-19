@@ -5,27 +5,37 @@ import { Doughnut } from "react-chartjs-2";
 import React from "react";
 import "./HouseRect.css";
 const data = {
-  labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+  labels: ["Walking Score of 80"],
+  datasets: [
+    {
+      label: "Walking Score",
+      data: [80, 20],
+      backgroundColor: ["rgba(255, 99, 132, 0.2)", "white"],
+      borderColor: ["rgba(255, 99, 132, 1)", "white"],
+      borderWidth: 1,
+    },
+  ],
+};
+const data2 = {
+  labels: ["Safety Rating of 60"],
   datasets: [
     {
       label: "# of Votes",
-      data: [12, 19, 3, 5, 2, 3],
-      backgroundColor: [
-        "rgba(255, 99, 132, 0.2)",
-        "rgba(54, 162, 235, 0.2)",
-        "rgba(255, 206, 86, 0.2)",
-        "rgba(75, 192, 192, 0.2)",
-        "rgba(153, 102, 255, 0.2)",
-        "rgba(255, 159, 64, 0.2)",
-      ],
-      borderColor: [
-        "rgba(255, 99, 132, 1)",
-        "rgba(54, 162, 235, 1)",
-        "rgba(255, 206, 86, 1)",
-        "rgba(75, 192, 192, 1)",
-        "rgba(153, 102, 255, 1)",
-        "rgba(255, 159, 64, 1)",
-      ],
+      data: [60, 40],
+      backgroundColor: ["rgba(54, 162, 235, 0.2)", "white"],
+      borderColor: ["rgba(54, 162, 235, 1)", "white"],
+      borderWidth: 1,
+    },
+  ],
+};
+const data3 = {
+  labels: ["Education Score of 90"],
+  datasets: [
+    {
+      label: "# of Votes",
+      data: [90, 10],
+      backgroundColor: ["rgba(255, 206, 86, 0.2)", "white"],
+      borderColor: ["rgba(255, 206, 86, 1)", "white"],
       borderWidth: 1,
     },
   ],
@@ -34,7 +44,7 @@ function HouseRect() {
   return (
     <Box
       style={{
-        width: "80%",
+        width: "70%",
         height: 207,
 
         borderRadius: "8px",
@@ -52,16 +62,20 @@ function HouseRect() {
           <h1>3230 230203</h1>
           <p>based on average price of current listings</p>
         </Grid>
-        <Divider orientation="vertical" flexItem />
-        <Grid container item md={9} justifyContent="space-evenly">
+        <Divider orientation="vertical" flexItem style={{ height: 207 }} />
+        <Grid container item md={8} justifyContent="space-evenly">
           <Box style={{ width: 180, height: 180 }}>
             <Doughnut data={data} />
           </Box>
-          <Box style={{ width: 50, height: 50 }}>
-            <Doughnut data={data} />
+          <Box style={{ width: 180, height: 180 }}>
+            <Doughnut data={data2} />
           </Box>
-          <Box style={{ width: 50, height: 50 }}>
-            <Doughnut data={data} />
+          <Box style={{ width: 180, height: 180 }}>
+            <Doughnut data={data3} />
+          </Box>
+          <Box style={{ textAlign: "center" }}>
+            <h3>$500 500</h3>
+            <h2>Average Household Income</h2>
           </Box>
         </Grid>
       </Grid>
