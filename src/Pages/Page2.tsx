@@ -35,8 +35,9 @@ function Page2() {
         >
           <BoxCard
             imgName={pre_built}
-            imgWidth={245}
-            imgHeight={181}
+            imgWidth={175}
+            imgHeight={89}
+            
             titleCard={"Pre-Built"}
             titleDesc={
               "I want a home that's already been built"
@@ -44,8 +45,8 @@ function Page2() {
           />
           <BoxCard
             imgName={pre_construct}
-            imgWidth={263}
-            imgHeight={126}
+            imgWidth={162}
+            imgHeight={101}
             titleCard={"Pre-Construction"}
             titleDesc={
               "I'm looking for a pre-construction"
