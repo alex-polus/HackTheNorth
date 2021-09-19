@@ -47,14 +47,22 @@ function HouseRect() {
         justifyContent="flex-start"
         alignItems="center"
       >
-        <Grid item>
+        <Grid item md={2}>
           <h4>Condos in harbourfront are currently</h4>
           <h1>3230 230203</h1>
           <p>based on average price of current listings</p>
         </Grid>
         <Divider orientation="vertical" flexItem />
-        <Grid item>
-          <Doughnut data={data} />
+        <Grid container item md={9} justifyContent="space-evenly">
+          <Box style={{ width: 180, height: 180 }}>
+            <Doughnut data={data} />
+          </Box>
+          <Box style={{ width: 50, height: 50 }}>
+            <Doughnut data={data} />
+          </Box>
+          <Box style={{ width: 50, height: 50 }}>
+            <Doughnut data={data} />
+          </Box>
         </Grid>
       </Grid>
     </Box>
