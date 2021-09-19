@@ -8,17 +8,18 @@ export const BoxCard: React.FC<{
   imgHeight: number;
   titleCard: string;
   titleDesc: string;
-}> = ({ imgName, imgWidth, imgHeight, titleCard, titleDesc }) => {
+  marginTop?: number;
+}> = ({ imgName, imgWidth, imgHeight, titleCard, titleDesc, marginTop }) => {
   return (
-    <Box width="293px" height="296px" marginX={2} marginTop={4}>
+    <Box width="320px" height="200px" marginX={2} marginTop={4}>
       <Grid
         container
-        direction="row"
-        justifyContent="center"
+        direction="column"
+        justifyContent="baseline"
         alignItems="center"
       >
         <img src={imgName} alt="Logo" width={imgWidth} height={imgHeight} />
-        <h4>{titleCard}</h4>
+        <h4 style={{ marginTop: marginTop }}>{titleCard}</h4>
         <p>{titleDesc}</p>
       </Grid>
     </Box>
