@@ -1,5 +1,6 @@
 import { Grid } from "@mui/material";
 import React from "react";
+import BeziarGraph from "../Components/BeziarGraph";
 import HouseRect from "../Components/HouseRect";
 import Navbar from "../Components/Navbar";
 
@@ -14,6 +15,7 @@ export default function House() {
         alignItems="center"
       >
         <HouseRect />
+        <BeziarGraph />
       </Grid>
     </>
   );
