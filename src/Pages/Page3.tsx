@@ -25,7 +25,7 @@ function Page3() {
     >
 
       <Grid item width="60%">
-        <h2 style={{ textAlign: "center" }}>Pre-built, or pre-construction?</h2>
+        <h2 style={{ textAlign: "center" }}>What kind of place are you looking for?</h2>
       </Grid>
       <Grid item width="60%">
         <Grid
@@ -54,6 +54,7 @@ function Page3() {
               ""
             }
           />
+
 
         </Grid>
       </Grid>
