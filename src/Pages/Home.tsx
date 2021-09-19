@@ -25,10 +25,10 @@ function Home() {
         alignItems="center"
         style={height}
       >
-        <Grid item md={2} width="1000px">
-          <h1 style={{ textAlign: "right" }}>Where is home?</h1>
+        <Grid item md={2} width="60%" marginTop={10}>
+          <h1 style={{ textAlign: "right" }}>Where to, Captain?</h1>
         </Grid>
-        <Grid item width="1000px">
+        <Grid item width="60%">
           <SearchBar />
         </Grid>
       </Grid>

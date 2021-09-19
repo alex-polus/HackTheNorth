@@ -10,7 +10,7 @@ export const BoxCard: React.FC<{
   titleDesc: string;
 }> = ({ imgName, imgWidth, imgHeight, titleCard, titleDesc }) => {
   return (
-    <Box width="293px" height="296px" marginX={2}>
+    <Box width="293px" height="296px" marginX={2} marginTop={4}>
       <Grid
         container
         direction="row"
@@ -18,7 +18,7 @@ export const BoxCard: React.FC<{
         alignItems="center"
       >
         <img src={imgName} alt="Logo" width={imgWidth} height={imgHeight} />
-        <h1>{titleCard}</h1>
+        <h4>{titleCard}</h4>
         <p>{titleDesc}</p>
       </Grid>
     </Box>
