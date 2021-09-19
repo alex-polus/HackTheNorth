@@ -11,10 +11,10 @@ const featherImage =
 function Background() {
   return (
     <Box className="box-background">
-      <img src={backgroundImage} width="45%" />
+      <img src={backgroundImage} width="55%" />
       <img
         src={featherImage}
-        style={{ width: 58, height: 150, marginLeft: 620 }}
+        style={{ width: 58, height: 150, marginLeft: 560 }}
       />
     </Box>
   );

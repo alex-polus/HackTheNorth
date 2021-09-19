@@ -3,6 +3,7 @@ import TextField from "@mui/material/TextField";
 import React from "react";
 import Background from "../Components/Background";
 import BoxCard from "../Components/BoxCard";
+import Navbar from "../Components/Navbar";
 import SearchBar from "../Components/SearchBar";
 
 let height = {
@@ -17,6 +18,7 @@ const image3 =
 function Home() {
   return (
     <div>
+      <Navbar />
       <Background />
       <Grid
         container
@@ -25,7 +27,7 @@ function Home() {
         alignItems="center"
         style={height}
       >
-        <Grid item md={2} width="60%" marginTop={10}>
+        <Grid item md={2} width="60%" marginTop={40}>
           <h1 style={{ textAlign: "right" }}>Where to, Captain?</h1>
         </Grid>
         <Grid item width="60%">
@@ -33,7 +35,7 @@ function Home() {
         </Grid>
       </Grid>
       <Grid
-        marginTop="200px"
+        marginTop="400px"
         container
         direction="column"
         justifyContent="center"
