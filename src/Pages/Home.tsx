@@ -46,7 +46,7 @@ function Home() {
             Because everybody should be able to afford a home
           </h1>
         </Grid>
-        <Grid item width="60%">
+        <Grid item width="70%">
           <Grid
             container
             direction="row"

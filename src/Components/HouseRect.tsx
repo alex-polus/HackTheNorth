@@ -44,11 +44,12 @@ function HouseRect() {
   return (
     <Box
       style={{
-        width: "70%",
+        width: "78%",
         height: 207,
 
         borderRadius: "8px",
         boxShadow: "0px 0px 8px rgba(0,0,0,0.1)",
+        marginBottom: 50,
       }}
     >
       <Grid
