@@ -1,8 +1,14 @@
+
+@font-face {
+  font-family: Telegraph;
+  src: url("font/PPTelegraf-Regular.otf") format("opentype");
+}
+
 head {
-  font-family: "Poppins", sans-serif;
+  font-family: "Telegraph", sans-serif;
 }
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Telegraph", sans-serif;
 }
