@@ -7,7 +7,7 @@ function SearchBar() {
     <TextField
       className="searchBar"
       id="outlined-basic"
-      label="Outlined"
+      label="Enter an address, neighbourhood, city or ZIP code."
       variant="outlined"
       color="primary"
     />
