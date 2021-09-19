@@ -1,4 +1,5 @@
 import TextField from "@mui/material/TextField/TextField";
+import ScriptTag from "react-script-tag";
 import React from "react";
 import "./SearchBar.css";
 
